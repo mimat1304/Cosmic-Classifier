@@ -64,7 +64,7 @@ The dataset used in this project contains features representing different cosmic
 
 ## 📈 Results
 
-The best performing model in this project was the Support Vector Classifier (SVC), which achieved an accuracy of 92% on the test dataset.
+The best performing model in this project was the Support Vector Classifier (SVC), which achieved an accuracy of 93% on the test dataset.
 This demonstrates the effectiveness of SVC in classifying cosmic data based on the provided features.
 
 ## ✨ Future Work
