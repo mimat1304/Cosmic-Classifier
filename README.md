@@ -8,22 +8,30 @@ A machine learning project that classifies different types of cosmic objects bas
 The **Cosmic Classifier** analyzes a dataset of celestial objects and builds a machine learning model to classify them accurately. The project focuses on:
 - Data exploration and visualization
 - Preprocessing (handling missing values, feature scaling, encoding)
+- KNN mean imputation for missing numerical data
+- KNN mode imputation for missing categorical data.
+- One hot encoding for categorical data.
 - Model building and evaluation (classification models like Random Forest, etc.)
 - Making predictions on new/unseen data
 
 ## 🗂️ Project Structure
 
 ```
-📁 Cosmic-Classifier
- ├── cosmic_classifier.ipynb   # Jupyter Notebook with full code and explanations
- ├── datasets/                 # Folder containing datasets (upload separately)
- └── README.md                 # Project overview and instructions
+📁 Cosmic-Classifier/
+   ├── datasets/
+   │   ├── cosmicclassifierTraining.csv     # Training dataset
+   │   ├── cosmicclassifierTest.csv         # Test dataset
+   │
+   ├── cosmic_classifier.ipynb              # Main Jupyter Notebook for model training and evaluation
+   ├── submission.csv                       # Output predictions or submission results
+   ├── requirements.txt                     # Python dependencies
+   └── README.md                            # Project overview and instructions
+
 ```
 
 ## 📚 Dataset
 
-The dataset used in this project contains features representing different cosmic objects, such as stars, galaxies, and quasars. You'll find it in the `datasets/` folder once uploaded.
-
+The dataset used in this project contains features representing different cosmic objects, such as stars, galaxies, and quasars. You'll find it in the `datasets/` folder.
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
@@ -38,12 +46,6 @@ The dataset used in this project contains features representing different cosmic
    Install required libraries:
    ```bash
    pip install -r requirements.txt
-   ```
-
-   > If you don't have a `requirements.txt`, here’s a quick list based on typical usage:
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
-   ```
 
 3. **Launch Jupyter Notebook**
    ```bash
@@ -62,7 +64,8 @@ The dataset used in this project contains features representing different cosmic
 
 ## 📈 Results
 
-The best performing model achieved high accuracy in classifying the cosmic objects.
+The best performing model in this project was the Support Vector Classifier (SVC), which achieved an accuracy of 92% on the test dataset.
+This demonstrates the effectiveness of SVC in classifying cosmic data based on the provided features.
 
 ## ✨ Future Work
 
